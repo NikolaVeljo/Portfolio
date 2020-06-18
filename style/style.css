@@ -652,21 +652,21 @@ header {
 .memory__game,
 .vila__kg,
 .portfolio {
-  background-image: url("/img/BingoScreen.png");
+  background-image: url("./img/BingoScreen.png");
   background-size: contain;
   background-blend-mode: overlay;
 }
 
 .memory__game {
-  background-image: url("/img/MemoryGame.png");
+  background-image: url("./img/MemoryGame.png");
 }
 
 .vila__kg {
-  background-image: url("/img/VilaKgScreen.png");
+  background-image: url("./img/VilaKgScreen.png");
 }
 
 .portfolio {
-  background-image: url("/img/portfolio.png");
+  background-image: url("./img/portfolio.png");
 }
 
 /* CONTACT */
