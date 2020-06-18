@@ -60,7 +60,7 @@ body {
   /* will-change: transform; */
 }
 
-/* @-webkit-keyframes gradientAnimation {
+@-webkit-keyframes gradientAnimation {
   0% {
     background-position: 0% 96%;
   }
@@ -81,7 +81,7 @@ body {
   100% {
     background-position: 0% 96%;
   }
-} */
+}
 
 @media screen and (max-width: 56.25em) {
   .wrapper {
