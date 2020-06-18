@@ -433,20 +433,49 @@ header {
   justify-content: space-evenly;
   grid-column: 2/3;
   max-height: calc(100vh - 10rem);
+  align-items: flex-start;
 }
 
 @media screen and (max-width: 56.25em) {
   .project__skills {
     grid-column: 1/-1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 .project__skills--programming,
 .project__skills--tools {
+  text-align: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  justify-content: flex-start;
+
   padding: 1rem;
+}
+
+.project__skills--programming h2,
+.project__skills--tools h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 56.25em) {
+  .project__skills--programming,
+  .project__skills--tools {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+  }
+  .project__skills--programming h2,
+  .project__skills--tools h2 {
+    width: 100%;
+  }
 }
 
 .project__skills--skill {
@@ -623,21 +652,21 @@ header {
 .memory__game,
 .vila__kg,
 .portfolio {
-  background-image: url(/img/BingoScreen.png);
+  background-image: url("/img/BingoScreen.png");
   background-size: contain;
   background-blend-mode: overlay;
 }
 
 .memory__game {
-  background-image: url(/img/MemoryGame.png);
+  background-image: url("/img/MemoryGame.png");
 }
 
 .vila__kg {
-  background-image: url(/img/VilaKgScreen.png);
+  background-image: url("/img/VilaKgScreen.png");
 }
 
 .portfolio {
-  background-image: url(/img/portfolio.png);
+  background-image: url("/img/portfolio.png");
 }
 
 /* CONTACT */

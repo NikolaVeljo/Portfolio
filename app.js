@@ -44,7 +44,7 @@ scrollLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     // prevent default
     e.preventDefault();
-    navToggle.classList.toggle("toggle");
+    navToggle.classList.remove("toggle");
 
     // navigate to specific spot
     const id = e.currentTarget.getAttribute("href").slice(1);
