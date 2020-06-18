@@ -44,7 +44,7 @@ function ana() {
 
     setTimeout(() => {
       form.style.display = "none";
-      cForm.appendChild(createMessage("succses"));
+      cForm.appendChild(createMessage("Thank you for getting in touch!"));
     }, 100);
   }
 }

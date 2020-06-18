@@ -542,7 +542,7 @@ header {
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
   place-items: center;
-  /* max-height: calc(100vh - 10rem); */
+  max-height: calc(60vh - 10rem);
 }
 
 @media screen and (max-width: 56.25em) {
@@ -561,7 +561,7 @@ header {
 .project__projects--single {
   font-size: 1.6rem;
   color: black;
-  /* width: 35rem; */
+  min-width: 25rem;
   height: 20rem;
   display: flex;
   flex-direction: column;
@@ -573,10 +573,10 @@ header {
 
 @media screen and (max-width: 56.25em) {
   .project__projects--single {
-    min-width: 70%;
     min-height: 15rem;
   }
 }
+
 .project__projects--single:hover {
   background-color: rgba(63, 63, 63, 0.152);
   color: black;
@@ -591,33 +591,32 @@ header {
 .project__projects--single::before {
   content: "";
   position: absolute;
-  left: -25%;
-  top: -80%;
-  /*width: 130%;
-  height: 180%;
-  */
-  min-width: 200%;
-  min-height: 250%;
+  left: -15%;
+  top: -50%;
+  min-width: 130%;
+  min-height: 200%;
   border: 1px solid magenta;
   background-color: #d1d1d1;
   opacity: 0.5;
   -webkit-filter: brightness(40%);
   filter: brightness(40%);
   transition: all 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
 }
 
 .project__projects--single:nth-child(odd):hover::before {
-  transform: translateX(50rem);
-  transform: translateY(50rem);
+  transform: translateY(35rem);
+  -webkit-transform: translateY(35rem);
+  -moz-transform: translateY(35rem);
+  -ms-transform: translateY(35rem);
+  -o-transform: translateY(35rem);
 }
+
 .project__projects--single:nth-child(even):hover::before {
-  transform: translateX(-50rem);
-  transform: translateY(-50rem);
+  transform: translateY(-35rem);
+  -moz-transform: translateY(-35rem);
+  -ms-transform: translateY(-35rem);
+  -o-transform: translateY(-35rem);
+  -webkit-transform: translateY(-35rem);
 }
 
 .project--heading {
@@ -633,6 +632,7 @@ header {
   text-align: center;
   font-size: 2rem;
 }
+
 .project__project--single-btns a {
   width: 45%;
   height: 4rem;
@@ -644,6 +644,7 @@ header {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+
 .project__project--single-btns a:hover {
   background-position: right;
 }
@@ -652,21 +653,21 @@ header {
 .memory__game,
 .vila__kg,
 .portfolio {
-  background-image: url("./img/BingoScreen.png");
+  background-image: url("../img/BingoScreen.png");
   background-size: contain;
   background-blend-mode: overlay;
 }
 
 .memory__game {
-  background-image: url("./img/MemoryGame.png");
+  background-image: url("../img/MemoryGame.png");
 }
 
 .vila__kg {
-  background-image: url("./img/VilaKgScreen.png");
+  background-image: url("../img/VilaKgScreen.png");
 }
 
 .portfolio {
-  background-image: url("./img/portfolio.png");
+  background-image: url("../img/portfolio.png");
 }
 
 /* CONTACT */
