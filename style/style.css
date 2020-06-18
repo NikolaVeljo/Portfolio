@@ -422,6 +422,12 @@ header {
   grid-template-rows: 5rem minmax(min-content, 1fr);
 }
 
+@media screen and (max-width: 56.25em) {
+  #project {
+    grid-template-rows: 5rem repeat(2, minmax(min-content, 1fr));
+  }
+}
+
 .project__primary--heading {
   grid-column: 1/-1;
   text-align: center;
@@ -468,9 +474,13 @@ header {
   .project__skills--tools {
     flex-direction: row;
     justify-content: center;
+    grid-row: 2/3;
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
+  }
+  .project__skills--tools {
+    grid-row: 3/4;
   }
   .project__skills--programming h2,
   .project__skills--tools h2 {
@@ -547,6 +557,7 @@ header {
 
 @media screen and (max-width: 56.25em) {
   .project__projects {
+    max-height: 75rem;
     grid-column: 1/-1;
     place-items: center;
   }
